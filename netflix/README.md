@@ -2,6 +2,8 @@
 
 1) Create react app
 2) configured tailwind
+  - Header
+  - Login Form
 
  -- features 
      -- login / signin
