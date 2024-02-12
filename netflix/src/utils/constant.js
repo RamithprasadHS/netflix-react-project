@@ -6,7 +6,7 @@ export const API_MOVIE_OPTIONS ={
     method: 'GET',
     headers: {
       accept: 'application/json',
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI2ZWRiOGZjMzdjMDZiMmM5NzhlODg0ODYzZjZjYjNjNCIsInN1YiI6IjY1YzcwYjlkNGQyM2RkMDE3ZGI2ZDlhYSIsInNjb3BlcyI6WyJhcGlfcmVhZCJdLCJ2ZXJzaW9uIjoxfQ.Vnnvm_XifeBTbJHMObA2m8LwbWAVtg72dTlZoifTIog'
+      Authorization: "Bearer" + process.env.REACT_APP_TMBD_KEY,
     }
   };
 
@@ -20,3 +20,5 @@ export const API_MOVIE_OPTIONS ={
     {identifier:'hindi',name:'Hindi'},
     {identifier:'spanish',name:'Spanish'}
   ];
+
+  export const OPENAI_KEY = process.env.REACT_APP_OPENAI_KEY;
